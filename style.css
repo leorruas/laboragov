@@ -259,3 +259,35 @@
   font-size:1.12cqw;
   line-height:1.28;
 }
+
+/* Slide 06 — lettering original. O SVG amarelo/laranja/roxo requer base escura. */
+.slide-invite .invite-left{padding-top:1cqw}
+.slide-invite .invite-svg-title{
+  display:block;
+  box-sizing:border-box;
+  width:45cqw;
+  max-width:100%;
+  margin:1.45cqw 0 0!important;
+  padding:1.1cqw 1.3cqw;
+  border-radius:.25cqw;
+  background:#262626;
+  line-height:0;
+}
+.slide-invite .invite-svg-title img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+}
+.slide-invite .invite-left>p{
+  font-size:1.52cqw;
+  line-height:1.32;
+  max-width:46cqw;
+  margin:1.5cqw 0 1.3cqw;
+}
+.slide-invite .invite-left .small-alert{
+  font-size:.95cqw;
+  max-width:44cqw;
+  line-height:1.36;
+  margin:1.2cqw 0 0;
+}
