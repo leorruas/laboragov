@@ -148,75 +148,95 @@
 
 
 
-/* Slides 7 e 8: composição com altura reservada para cada bloco.
-   Não reduzir a fonte sem corrigir a estrutura vertical. */
+/* Slide 7 — feed/carrossel: hierarquia editorial, exemplo gráfico compacto e rodapé próprio. */
 .app-feed{
   display:grid;
   grid-template-rows:max-content minmax(0,1fr) max-content;
-  row-gap:.55cqw;
+  gap:.38cqw;
   min-width:0;
 }
 .app-feed .app-heading{position:relative;min-width:0}
 .app-feed .app-heading h2{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:0;
+  margin:.25cqw 0 0!important;
+  line-height:.79;
+}
+.app-feed .app-heading h2 span{
   display:block;
-  margin:.6cqw 0 0!important;
-  font:900 2.06cqw/1 var(--display-narrow);
-  letter-spacing:-.015em;
+  font-weight:900;
   white-space:nowrap;
-  overflow:visible;
+  letter-spacing:-.02em;
+}
+.app-feed .app-heading h2 span:first-child{
+  font-family:var(--display);
+  font-size:3.45cqw;
+  line-height:.77;
+}
+.app-feed .app-heading h2 span:last-child{
+  font-family:var(--display-narrow);
+  font-size:2.82cqw;
+  line-height:.87;
 }
 .app-feed .carousel-mock{
-  width:100%;
-  max-width:18cqw;
-  height:100%;
+  position:relative;
+  width:17.7cqw;
+  max-width:100%;
+  height:5.55cqw;
   min-height:0;
-  max-height:7.2cqw;
   align-self:center;
   justify-self:center;
-  position:relative;
+  flex-shrink:1;
   overflow:hidden;
-  margin:0;
 }
-.app-feed .carousel-behind{
+.app-feed .carousel-sheet{
   position:absolute;
-  inset:.6cqw .2cqw .15cqw 1.2cqw;
-  background:var(--violet);
-  border:.16cqw solid #171717;
+  box-sizing:border-box;
+  border:.16cqw solid #151515;
   border-radius:.25cqw;
 }
-.app-feed .carousel-panel{
-  position:absolute;
-  inset:.05cqw 1.25cqw .7cqw .05cqw;
+.app-feed .carousel-back{
+  inset:.5cqw .05cqw .05cqw 2cqw;
+  background:var(--acid);
+}
+.app-feed .carousel-middle{
+  inset:.28cqw .7cqw .28cqw 1.15cqw;
+  background:var(--violet);
+}
+.app-feed .carousel-front{
+  top:0;
+  left:0;
+  width:calc(100% - 1.9cqw);
+  height:4.9cqw;
+  background:#222;
+  color:var(--acid);
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  padding:.55cqw .75cqw;
-  background:#222;
-  border:.16cqw solid #151515;
-  border-radius:.22cqw;
-  color:var(--acid);
+  padding:.47cqw .64cqw;
 }
-.app-feed .carousel-panel small{
-  font:800 .78cqw/1 var(--body);
+.app-feed .carousel-front small{
+  font:800 .75cqw/1 var(--body);
   letter-spacing:.08em;
 }
-.app-feed .carousel-panel strong{
-  display:block;
-  font:900 2.2cqw/.82 var(--display-narrow);
+.app-feed .carousel-front strong{
+  font:900 2.0cqw/.82 var(--display-narrow);
+  letter-spacing:-.01em;
   white-space:nowrap;
 }
-.app-feed .carousel-panel>span{
+.app-feed .carousel-front>span{
   position:absolute;
-  right:.7cqw;
-  top:.35cqw;
-  font:900 2.2cqw/1 var(--display);
+  right:.5cqw;
+  top:.25cqw;
+  font:900 1.9cqw/1 var(--display);
 }
 .app-feed .app-meta{
   min-width:0;
   margin:0;
-  padding-top:.6cqw;
+  padding-top:.5cqw;
 }
-
 /* Slide 8: duas linhas reais de título, grid flexível e legenda preservada. */
 .slide-roles .slide-content{display:flex;flex-direction:column}
 .slide-roles .roles-headline{
