@@ -27,6 +27,18 @@ A apresentação já carrega as artes originais enviadas:
 
 A apresentação referencia fontes em `assets/fonts/`. **Apagar esses arquivos faz os títulos passarem para a fonte substituta.** Para manter fiel o desenho dos títulos sem depender dos arquivos tipográficos, converta os títulos em contornos vetoriais e substitua-os por SVGs/PNGs de composição, ou use uma alternativa livre ajustada para o mesmo visual. Antes de distribuir o endereço da apresentação externamente, revise as permissões/licença da fonte.
 
+## Canais e frequência — proposta para validação
+
+O slide **07 — Canais e cadências** diferencia formatos e usos. A frequência não está expressa em número fixo de publicações, pois depende da utilização real dos canais, da equipe e de autorização:
+
+- **Feed / carrossel:** menos frequente; explicar a comunidade, funções e propostas em linguagem clara e sequencial.
+- **WhatsApp:** mais frequente para integrantes; mobilização e intercâmbio, não apenas anúncios unilaterais.
+- **Stories:** mais frequente para lembretes, interação e bastidores.
+- **E-mail:** menos frequente; reunir avisos e informações relevantes.
+- **Carta da Comunidade:** **proposta** de página permanente no site institucional, preservando o texto integral e as regras. **Essa página ainda não foi criada no projeto de apresentação e não há URL pública oficial confirmada.** A fonte principal continua a Carta do grupo. A apresentação em GitHub Pages não equivale ao site institucional.
+
+O slide **10 — Estratégia de mobilização** organiza essa proposta em conversar, explicar e documentar. O princípio transversal é linguagem simples, sem transformar a Carta formal em post resumido como se fosse a íntegra.
+
 ## Observações
 
 - A direção visual e o calendário são **propostas sujeitas à avaliação do LA-BORA!gov**.
