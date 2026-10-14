@@ -311,3 +311,14 @@
   line-height:1.36;
   margin:1.2cqw 0 0;
 }
+
+/* Slide 12 — título para redes: preservar a segunda linha em uma só faixa. */
+.slide-decisions h1>span{
+  display:block;
+  max-width:100%;
+  white-space:nowrap;
+  font-family:var(--display-narrow);
+  font-size:6.1cqw;
+  line-height:.98;
+  letter-spacing:-.025em;
+}
