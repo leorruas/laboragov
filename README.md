@@ -11,9 +11,21 @@ Apresentação **em formato de slides 16:9**, com navegação por setas do tecla
 
 Tudo está no arquivo `index.html`, sem framework nem build. O arquivo `.nojekyll` não é necessário.
 
-## Atualizar as peças
+## Artes e tipografia em uso
 
-O slide com convite inclui uma **reconstrução HTML ilustrativa**, não substitui o arquivo de design aprovado. Para mostrar o cartaz final no lugar desse mockup, salve a imagem PNG no repositório em `assets/cartaz-free-las.png`. O arquivo será detectado automaticamente e exibido sobre a reconstrução.
+A apresentação já carrega as artes originais enviadas:
+
+- Slide 5: `assets/Neon Browser Window Collage.png` — colagem de janelas conectadas.
+- Slide 6: `assets/para o email .png` — cartaz tipográfico original do Figma.
+- Títulos: arquivos locais **Knockout**, usados temporariamente neste protótipo.
+- Textos, descrições e legendas: **Anybody**, do Google Fonts.
+- Caso Knockout não esteja disponível, os títulos usam Barlow Condensed como substituição visual.
+
+### Antes de retirar as fontes Knockout
+
+**O repositório é público.** Os arquivos Knockout estão publicados no histórico Git desde o envio, e excluí-los em um commit novo não elimina as versões anteriores. A hospedagem web, mesmo temporária, também deve estar de acordo com a licença de uso da fonte.
+
+A apresentação referencia fontes em `assets/fonts/`. **Apagar esses arquivos faz os títulos passarem para a fonte substituta.** Para manter fiel o desenho dos títulos sem depender dos arquivos tipográficos, converta os títulos em contornos vetoriais e substitua-os por SVGs/PNGs de composição, ou use uma alternativa livre ajustada para o mesmo visual. Antes de distribuir o endereço da apresentação externamente, revise as permissões/licença da fonte.
 
 ## Observações
 
