@@ -337,3 +337,140 @@
   line-height:.98;
   letter-spacing:-.025em;
 }
+
+
+/* Slide 03 — collage de blocos em deslocamento.
+   As três proporções originais de lettering continuam intactas: o movimento
+   nasce dos planos coloridos, de suas sombras e dos desalinhamentos. */
+.slide-elastic .elastic-collage{
+  position:relative;
+  display:block;
+  height:32.2cqw;
+  margin-top:2.5cqw;
+  isolation:isolate;
+}
+.elastic-collage .elastic-block,
+.elastic-collage .elastic-scrap{
+  position:absolute;
+  display:block;
+  pointer-events:none;
+}
+.elastic-collage .block-stretch{
+  z-index:0;
+  top:1.75cqw;
+  left:2.0cqw;
+  width:84.2cqw;
+  height:8.75cqw;
+  background:#202020;
+  transform:rotate(.8deg);
+}
+.elastic-collage .block-squeeze{
+  z-index:1;
+  top:11.0cqw;
+  left:18.2cqw;
+  width:59.6cqw;
+  height:10.4cqw;
+  background:var(--acid);
+  transform:rotate(-2.2deg);
+}
+.elastic-collage .block-experiment{
+  z-index:1;
+  top:22.5cqw;
+  left:8.2cqw;
+  width:80.5cqw;
+  height:9.1cqw;
+  background:var(--violet);
+  transform:rotate(1.7deg);
+}
+.elastic-collage .scrap-left{
+  z-index:0;
+  left:1cqw;
+  top:16.0cqw;
+  width:7.0cqw;
+  height:5.1cqw;
+  background:var(--acid);
+  transform:rotate(-9deg);
+}
+.elastic-collage .scrap-right{
+  z-index:0;
+  left:82cqw;
+  top:10.5cqw;
+  width:6.2cqw;
+  height:6.2cqw;
+  background:var(--violet);
+  transform:rotate(12deg);
+}
+.slide-elastic .elastic-collage .elastic-row{
+  position:absolute;
+  margin:0;
+  padding:0 1.5cqw;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5cqw;
+  overflow:hidden;
+  box-sizing:border-box;
+  transform-origin:center center;
+}
+.slide-elastic .elastic-collage .elastic-long{
+  z-index:2;
+  left:0.9cqw;
+  top:.55cqw;
+  width:84.3cqw;
+  height:8.75cqw;
+  background:var(--acid);
+  transform:rotate(-.9deg);
+}
+.slide-elastic .elastic-collage .elastic-short{
+  z-index:3;
+  left:15.8cqw;
+  top:9.8cqw;
+  width:59.8cqw;
+  height:10.4cqw;
+  background:var(--violet);
+  transform:rotate(1.25deg);
+}
+.slide-elastic .elastic-collage .elastic-mid{
+  z-index:4;
+  left:6.3cqw;
+  top:21.1cqw;
+  width:80.5cqw;
+  height:9.1cqw;
+  background:#252525;
+  transform:rotate(-.8deg);
+}
+.slide-elastic .elastic-collage .elastic-row>b{
+  flex:0 0 auto;
+  font-size:6.1cqw;
+  line-height:1;
+  margin-left:auto;
+}
+.slide-elastic .elastic-collage .elastic-art{
+  display:block;
+  flex:0 1 auto;
+  min-width:0;
+  object-fit:contain;
+}
+.slide-elastic .elastic-collage .elastic-art-stretch{
+  width:70.0cqw;
+  max-width:calc(100% - 7.5cqw);
+  height:auto;
+  max-height:7.1cqw;
+}
+.slide-elastic .elastic-collage .elastic-art-squeeze{
+  width:auto;
+  height:9.05cqw;
+  max-width:calc(100% - 7.5cqw);
+  max-height:9.05cqw;
+}
+.slide-elastic .elastic-collage .elastic-art-experiment{
+  width:73.2cqw;
+  max-width:100%;
+  height:auto;
+  max-height:7.7cqw;
+}
+.slide-elastic .elastic-bottom{
+  position:relative;
+  z-index:5;
+  margin-top:1.35cqw;
+}
