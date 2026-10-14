@@ -70,3 +70,30 @@
 .slide-strategy h1>span{font-family:var(--display-narrow)}
 .slide-calendar h1>span{font-family:var(--display-narrow)}
 .slide-decisions h1>span{font-family:var(--display-narrow)}
+
+
+/* Ajustes tipográficos após revisão visual (14/10):
+   evitar que COMUNIDADE invada a coluna de leitura e calibrar entrelinhas.
+   A escala vertical não aumenta a largura dos caracteres. */
+.slide-manifesto .manifesto-title .manifesto-junior{
+  font-size:6.9cqw;
+  line-height:.98;
+  transform:scaleY(1.21);
+  transform-origin:left center;
+}
+.slide-manifesto .manifesto-title .manifesto-line:not(.manifesto-junior){
+  line-height:.76;
+}
+/* Palavras sem acentos ou cedilhas permitem uma entrelinha mais compacta. */
+.slide-meet h1,
+.slide-invite h1,
+.slide-applications h1,
+.slide-roles h1,
+.slide-calendar h1,
+.slide-decisions h1{line-height:.80}
+.slide-badge .badge-explain h1{line-height:.77}
+.slide-badge .badge-explain h1>span{
+  display:inline-block;
+  transform:scaleY(1.06);
+  transform-origin:center center;
+}
