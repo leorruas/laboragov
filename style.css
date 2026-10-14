@@ -38,18 +38,14 @@
 .slide-meet .image-asset img{display:block;width:39cqw;max-height:23cqw;object-fit:contain;mix-blend-mode:normal}
 .poster-final:not([hidden]){height:100%;width:auto;max-height:100%;max-width:100%;object-fit:contain}
 
-/* Slide 03: contraste entre famílias da Knockout, traduzindo elasticidade na palavra. */
-@font-face{font-family:'Knockout Junior Lite';src:url('assets/fonts/Knockout-29-Junior-Lightweight.otf') format('opentype');font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:'Knockout Junior Sumo';src:url('assets/fonts/Knockout-34-Junior-Sumo.otf') format('opentype');font-style:normal;font-weight:900;font-display:swap}
-.slide-elastic .elastic-row{position:relative;align-items:center}
-.slide-elastic .elastic-stretch{font-family:var(--display-wide);font-size:12.5cqw;font-weight:900;letter-spacing:-.035em;line-height:.75;display:inline-block;white-space:nowrap;transform:scaleX(1.38);transform-origin:left center}
-.slide-elastic .elastic-short{width:72%;padding-right:1.2cqw}
-.slide-elastic .elastic-squeeze{font-family:'Knockout Junior Sumo',var(--display-narrow);font-size:11.8cqw;font-weight:900;letter-spacing:-.1em;line-height:.75;display:inline-block;white-space:nowrap;transform:scaleX(.76);transform-origin:left center}
-.slide-elastic .elastic-mid{padding-right:1.3cqw}
-.slide-elastic .elastic-mix{display:flex;align-items:center;white-space:nowrap;max-width:100%;height:100%;letter-spacing:-.07em;line-height:.7}
-.slide-elastic .elastic-mix>span{display:inline-block;flex-shrink:0}
-.slide-elastic .elastic-exp{font:900 10.8cqw/.7 var(--display-wide);color:#fff}
-.slide-elastic .elastic-peri{font:900 12.8cqw/.7 var(--display-narrow);color:#fff}
-.slide-elastic .elastic-ment{font:900 10.5cqw/.7 var(--display);color:#fff}
-.slide-elastic .elastic-ar{font:400 13.4cqw/.7 'Knockout Junior Lite',var(--display-narrow);color:var(--acid)}
-.slide-elastic .elastic-end{font:900 11.3cqw/.7 var(--display-wide);color:var(--acid)}
+/* Slide 03: contraste controlado de larguras com três Knockouts.
+   Sem transformações horizontais: a fonte define a forma e o texto sempre cabe. */
+.slide-elastic .elastic-row{position:relative;align-items:center;gap:2cqw}
+.slide-elastic .elastic-row>span{display:block;min-width:0;white-space:nowrap;line-height:.8;transform:none;letter-spacing:-.025em}
+.slide-elastic .elastic-row>b{flex:0 0 auto;margin-left:auto;line-height:1}
+.slide-elastic .elastic-long{width:100%;padding:0 1.2cqw}
+.slide-elastic .elastic-stretch{font-family:var(--display-wide);font-size:12.3cqw;font-weight:900;color:var(--ink)}
+.slide-elastic .elastic-short{width:72%;padding:0 1.2cqw}
+.slide-elastic .elastic-squeeze{font-family:var(--display-narrow);font-size:10.5cqw;font-weight:900;color:white;letter-spacing:-.035em}
+.slide-elastic .elastic-mid{width:94%;padding:0 1.2cqw}
+.slide-elastic .elastic-experiment{font-family:var(--display);font-size:10.4cqw;font-weight:900;color:white;letter-spacing:-.025em}
