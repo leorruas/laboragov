@@ -78,18 +78,33 @@
 .slide-meet .image-asset img{display:block;width:39cqw;max-height:23cqw;object-fit:contain;mix-blend-mode:normal}
 .poster-final:not([hidden]){height:100%;width:auto;max-height:100%;max-width:100%;object-fit:contain}
 
-/* Slide 03: contraste controlado de larguras com três Knockouts.
-   Sem transformações horizontais: a fonte define a forma e o texto sempre cabe. */
-.slide-elastic .elastic-row{position:relative;align-items:center;gap:2cqw}
-.slide-elastic .elastic-row>span{display:block;min-width:0;white-space:nowrap;line-height:.8;transform:none;letter-spacing:-.025em}
+/* Slide 03 — artes vetoriais originais: respeitar as três proporções desenhadas.
+   Os SVGs foram enviados em branco; o primeiro usa filtro preto sobre amarelo,
+   sem alterar o arquivo-fonte. */
+.slide-elastic .elastic-row{position:relative;display:flex;align-items:center;gap:2cqw;overflow:hidden}
 .slide-elastic .elastic-row>b{flex:0 0 auto;margin-left:auto;line-height:1}
+.slide-elastic .elastic-art{display:block;flex:0 1 auto;object-fit:contain;min-width:0}
 .slide-elastic .elastic-long{width:100%;padding:0 1.2cqw}
-.slide-elastic .elastic-stretch{font-family:var(--display-wide);font-size:12.3cqw;font-weight:900;color:var(--ink)}
+.slide-elastic .elastic-art-stretch{
+  width:75cqw;
+  max-width:calc(100% - 9cqw);
+  height:auto;
+  max-height:7.5cqw;
+  filter:brightness(0);
+}
 .slide-elastic .elastic-short{width:72%;padding:0 1.2cqw}
-.slide-elastic .elastic-squeeze{font-family:var(--display-narrow);font-size:10.5cqw;font-weight:900;color:white;letter-spacing:-.035em}
+.slide-elastic .elastic-art-squeeze{
+  height:8.15cqw;
+  width:auto;
+  max-width:calc(100% - 9cqw);
+}
 .slide-elastic .elastic-mid{width:94%;padding:0 1.2cqw}
-.slide-elastic .elastic-experiment{font-family:var(--display);font-size:10.4cqw;font-weight:900;color:white;letter-spacing:-.025em}
-
+.slide-elastic .elastic-art-experiment{
+  width:76cqw;
+  max-width:100%;
+  height:auto;
+  max-height:8.2cqw;
+}
 
 /* Revisão dos títulos — Knockout na hierarquia de impacto, Anybody na leitura.
    Cada palavra é composta com uma variante real, sem stretch artificial. */
