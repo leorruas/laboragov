@@ -475,14 +475,43 @@
   margin-top:1.35cqw;
 }
 
-/* Slide 7 — saudação curta no mockup de e-mail. */
+/* Slide 7 — mensagem de e-mail com três áreas independentes. */
+.app-email .email-mock{
+  display:grid;
+  grid-template-rows:1.38cqw minmax(0,1fr) 1.15cqw;
+  height:8cqw;
+  overflow:hidden;
+}
+.app-email .email-mock .email-mock-top{
+  height:auto;
+  min-height:0;
+  padding:.1cqw .6cqw;
+  line-height:1;
+}
 .app-email .email-mock .email-greeting{
   display:flex;
   flex-direction:column;
-  gap:.15cqw;
-  padding:.42cqw .6cqw 0;
-  font:900 2.85cqw/.85 var(--display-narrow);
+  justify-content:center;
+  min-height:0;
+  gap:.08cqw;
+  padding:.15cqw .65cqw .05cqw;
+  margin:0;
+  font:900 2.4cqw/.83 var(--display-narrow);
   letter-spacing:-.025em;
   white-space:nowrap;
 }
 .app-email .email-mock .email-greeting span{display:block}
+.app-email .email-mock>span:last-child{
+  display:flex;
+  align-items:center;
+  height:auto;
+  min-height:0;
+  margin:0;
+  padding:.15cqw .6cqw;
+  border-top:.11cqw solid #171717;
+  font:800 .68cqw/1 var(--body);
+  letter-spacing:.02em;
+  white-space:nowrap;
+  color:#171717;
+  background:#f2f1ec;
+}
