@@ -56,17 +56,17 @@
   display:block;width:max-content;max-width:100%;color:var(--ink);
   font-weight:900;line-height:.78;letter-spacing:-.035em;white-space:nowrap;
 }
-.slide-manifesto .manifesto-title .manifesto-ultimate{font-family:var(--display-wide);font-size:8.7cqw}
-.slide-manifesto .manifesto-title .manifesto-junior{font-family:var(--display-narrow);font-size:9.6cqw;letter-spacing:-.025em}
-.slide-manifesto .manifesto-title .manifesto-accent{font-family:var(--display);font-size:8.75cqw;color:var(--hot)}
+.slide-manifesto .manifesto-title .manifesto-ultimate{font-family:var(--display-wide);font-size:8.5cqw}
+.slide-manifesto .manifesto-title .manifesto-junior{font-family:var(--display-narrow);font-size:8.7cqw;letter-spacing:-.025em}
+.slide-manifesto .manifesto-title .manifesto-accent{font-family:var(--display);font-size:8.5cqw;color:var(--hot)}
 .slide-manifesto .manifesto-title .manifesto-full{font-family:var(--display);font-size:8.35cqw}
 /* Diferenças de largura pontuais nos demais títulos principais. */
-.slide-system .slide-head>span{font-family:var(--display-narrow);font-size:1.10em}
-.slide-meet h1>span{font-family:var(--display-narrow);font-size:1.10em;letter-spacing:-.025em}
-.slide-invite h1>span{font-family:var(--display-narrow);font-size:1.08em;letter-spacing:-.025em}
-.slide-applications h1>span{font-family:var(--display-narrow);font-size:1.12em;letter-spacing:-.02em}
-.slide-roles h1>span{font-family:var(--display-narrow);font-size:1.12em;letter-spacing:-.02em}
+.slide-system .slide-head>span{font-family:var(--display-narrow)}
+.slide-meet h1>span{font-family:var(--display-narrow);letter-spacing:-.025em}
+.slide-invite h1>span{font-family:var(--display-narrow);letter-spacing:-.025em}
+.slide-applications h1>span{font-family:var(--display-narrow);letter-spacing:-.02em}
+.slide-roles h1>span{font-family:var(--display-narrow);letter-spacing:-.02em}
 .slide-badge h1>span{font-family:var(--display-wide);font-size:1em;letter-spacing:-.025em}
-.slide-strategy h1>span{font-family:var(--display-narrow);font-size:1.10em}
-.slide-calendar h1>span{font-family:var(--display-narrow);font-size:1.09em}
-.slide-decisions h1>span{font-family:var(--display-narrow);font-size:1.10em}
+.slide-strategy h1>span{font-family:var(--display-narrow)}
+.slide-calendar h1>span{font-family:var(--display-narrow)}
+.slide-decisions h1>span{font-family:var(--display-narrow)}
