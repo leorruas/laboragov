@@ -97,3 +97,6 @@
   transform:scaleY(1.06);
   transform-origin:center center;
 }
+
+/* Mantém a composição compacta, mas separa ATUAR. de FORMAS DE. */
+.slide-manifesto .manifesto-title .manifesto-line:last-child{margin-top:1.05cqw}
