@@ -21,11 +21,6 @@ A apresentação já carrega as artes originais enviadas:
 - Textos, descrições e legendas: **Anybody**, do Google Fonts.
 - Caso Knockout não esteja disponível, os títulos usam Barlow Condensed como substituição visual.
 
-### Antes de retirar as fontes Knockout
-
-**O repositório é público.** Os arquivos Knockout estão publicados no histórico Git desde o envio, e excluí-los em um commit novo não elimina as versões anteriores. A hospedagem web, mesmo temporária, também deve estar de acordo com a licença de uso da fonte.
-
-A apresentação referencia fontes em `assets/fonts/`. **Apagar esses arquivos faz os títulos passarem para a fonte substituta.** Para manter fiel o desenho dos títulos sem depender dos arquivos tipográficos, converta os títulos em contornos vetoriais e substitua-os por SVGs/PNGs de composição, ou use uma alternativa livre ajustada para o mesmo visual. Antes de distribuir o endereço da apresentação externamente, revise as permissões/licença da fonte.
 
 ## Canais e frequência — proposta para validação
 
