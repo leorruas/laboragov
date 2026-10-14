@@ -474,3 +474,15 @@
   z-index:5;
   margin-top:1.35cqw;
 }
+
+/* Slide 7 — saudação curta no mockup de e-mail. */
+.app-email .email-mock .email-greeting{
+  display:flex;
+  flex-direction:column;
+  gap:.15cqw;
+  padding:.42cqw .6cqw 0;
+  font:900 2.85cqw/.85 var(--display-narrow);
+  letter-spacing:-.025em;
+  white-space:nowrap;
+}
+.app-email .email-mock .email-greeting span{display:block}
