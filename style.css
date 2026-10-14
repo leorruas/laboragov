@@ -47,3 +47,26 @@
 .slide-elastic .elastic-squeeze{font-family:var(--display-narrow);font-size:10.5cqw;font-weight:900;color:white;letter-spacing:-.035em}
 .slide-elastic .elastic-mid{width:94%;padding:0 1.2cqw}
 .slide-elastic .elastic-experiment{font-family:var(--display);font-size:10.4cqw;font-weight:900;color:white;letter-spacing:-.025em}
+
+
+/* Revisão dos títulos — Knockout na hierarquia de impacto, Anybody na leitura.
+   Cada palavra é composta com uma variante real, sem stretch artificial. */
+.slide-manifesto .manifesto-title{margin-top:2cqw;line-height:1;letter-spacing:-.015em}
+.slide-manifesto .manifesto-title .manifesto-line{
+  display:block;width:max-content;max-width:100%;color:var(--ink);
+  font-weight:900;line-height:.78;letter-spacing:-.035em;white-space:nowrap;
+}
+.slide-manifesto .manifesto-title .manifesto-ultimate{font-family:var(--display-wide);font-size:8.7cqw}
+.slide-manifesto .manifesto-title .manifesto-junior{font-family:var(--display-narrow);font-size:9.6cqw;letter-spacing:-.025em}
+.slide-manifesto .manifesto-title .manifesto-accent{font-family:var(--display);font-size:8.75cqw;color:var(--hot)}
+.slide-manifesto .manifesto-title .manifesto-full{font-family:var(--display);font-size:8.35cqw}
+/* Diferenças de largura pontuais nos demais títulos principais. */
+.slide-system .slide-head>span{font-family:var(--display-narrow);font-size:1.10em}
+.slide-meet h1>span{font-family:var(--display-narrow);font-size:1.10em;letter-spacing:-.025em}
+.slide-invite h1>span{font-family:var(--display-narrow);font-size:1.08em;letter-spacing:-.025em}
+.slide-applications h1>span{font-family:var(--display-narrow);font-size:1.12em;letter-spacing:-.02em}
+.slide-roles h1>span{font-family:var(--display-narrow);font-size:1.12em;letter-spacing:-.02em}
+.slide-badge h1>span{font-family:var(--display-wide);font-size:1em;letter-spacing:-.025em}
+.slide-strategy h1>span{font-family:var(--display-narrow);font-size:1.10em}
+.slide-calendar h1>span{font-family:var(--display-narrow);font-size:1.09em}
+.slide-decisions h1>span{font-family:var(--display-narrow);font-size:1.10em}
